@@ -1,18 +1,32 @@
 {
+  "homepage": "https://eden3772.github.io/Netflex-clone",
   "name": "netflex",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/base": "^5.0.0-beta.33",
+    "@mui/icons-material": "^5.15.6",
+    "@mui/material": "^5.15.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.7",
+    "movie": "^1.0.1",
+    "movie-trailer": "^3.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-youtube": "^10.1.0",
+    "trailer": "^0.10.0",
+    "web-vitals": "^2.1.4",
+    "youtube": "^0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "github-pages": "^3.0.2"
   }
 }
